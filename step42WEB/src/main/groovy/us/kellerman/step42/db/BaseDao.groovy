@@ -7,4 +7,5 @@ import java.util.logging.Logger
  * Created by ckell on 7/30/15.
  */
 class BaseDao {
+    //just a comment.
 }
