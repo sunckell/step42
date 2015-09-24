@@ -12,6 +12,15 @@ class PropertiesBase {
     def environment = null
 
     protected PropertiesBase(propertiesFileName){
+        try {
+            ClassLoader cl       = PropertiesBase.class.getClassLoader();
+            InputStream inStream = cl.getResourceAsStream(propertiesFileName);
+            properties           = new Properties();
+            properties.load(inStream);
+            inStream.close();
+        }catch(Exception ex) {
+            throw new RuntimeException("GovPropertiesBase.GovPropertiesBase() Failed to load property file " + propertiesFileName + ".", ex);
+        }
 
     }
 }
