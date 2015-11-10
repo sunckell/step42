@@ -2,7 +2,7 @@
   <library name="javax.json.processing-1.0" type="JsonProcessing">
     <properties version="1.0" />
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/step52WEB/lib/javax.json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/step42WEB/lib/javax.json.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
